@@ -1,5 +1,5 @@
 {% set name = "anaconda-cli-base" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/anaconda_cli_base-{{ version }}.tar.gz
-  sha256: d08c31755952b0a5c267a80f229e9205d0ad8527020629ab2394e367372302d6
+  sha256: 8c6fe10f844b2f4c3b70640e73862d079481b53b15eb54ab4e2cab0bc19be387
 
 build:
   noarch: python
