@@ -29,7 +29,7 @@ requirements:
   run_constrained:
     # Ensure that a version of anaconda-cli-base cannot be installed if an incompatible
     # older version of anaconda-client is installed.
-    - anaconda-client>=1.13.0
+    - anaconda-client >=1.13.0
 
 test:
   imports:
