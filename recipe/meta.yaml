@@ -23,9 +23,11 @@ requirements:
     - pip
   run:
     - python >=3.8,<3.12
+    - click
     - readchar
     - rich
     - typer
+    - pydantic-settings >=2.3
   run_constrained:
     # Ensure that a version of anaconda-cli-base cannot be installed if an incompatible
     # older version of anaconda-client is installed.
