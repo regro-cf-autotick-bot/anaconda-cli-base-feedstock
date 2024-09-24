@@ -22,7 +22,7 @@ requirements:
     - setuptools-scm >=7.1
     - pip
   run:
-    - python >=3.8,<3.12
+    - python >=3.8
     - click
     - readchar
     - rich
