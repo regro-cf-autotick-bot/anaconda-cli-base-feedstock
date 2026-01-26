@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: anaconda-cli-base
-  version: "0.7.0"
+  version: "0.8.0"
   python_min: "3.10"
 
 package:
@@ -11,10 +11,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/anaconda_cli_base-${{ version }}.tar.gz
-  sha256: 4ebec5d913039b6ac208a4c6abed737f7ad1f311f54c14b768bd5cb266092207
+  sha256: da415a9702301fcf436770d2c0d5a7cddcfedc5d7cc591bd32f81256b269b396
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
   python:
@@ -37,6 +37,7 @@ requirements:
     - pydantic-settings >=2.3
     - tomli
     - packaging >=23.0
+    - tomlkit
   run_constraints:
     # Ensure coordinated rollout of changes related to multi-site configuration
     - anaconda-auth >=0.12.0
