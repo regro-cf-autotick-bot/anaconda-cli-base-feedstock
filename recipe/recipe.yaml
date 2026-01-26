@@ -37,6 +37,7 @@ requirements:
     - pydantic-settings >=2.3
     - tomli
     - packaging >=23.0
+    - tomlkit
   run_constraints:
     # Ensure coordinated rollout of changes related to multi-site configuration
     - anaconda-auth >=0.12.0
