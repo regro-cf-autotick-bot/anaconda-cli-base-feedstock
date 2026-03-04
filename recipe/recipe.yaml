@@ -34,6 +34,7 @@ requirements:
     - readchar
     - rich
     - typer >=0.17
+    - pydantic >=2.12
     - pydantic-settings >=2.3
     - tomli
     - packaging >=23.0
