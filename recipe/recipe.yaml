@@ -14,7 +14,7 @@ source:
   sha256: f9a3f004a6890251ed9ab9ed35415e752c5ca68add699cd2a86ce79dd2df4c64
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
   python:
@@ -34,6 +34,7 @@ requirements:
     - readchar
     - rich
     - typer >=0.17
+    - pydantic >=2.12
     - pydantic-settings >=2.3
     - tomli
     - packaging >=23.0
