@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: anaconda-cli-base
-  version: "0.8.2"
+  version: "0.9.1"
   python_min: "3.10"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/anaconda_cli_base-${{ version }}.tar.gz
-  sha256: 2b7f04cbc19af3d70875411d2020832a0264d21a0575f91ed66b6401b2390063
+  sha256: a542d9e8098cb1633281b88e507c199deb45aeb72e560778738e308a3c28f162
 
 build:
   number: 0
